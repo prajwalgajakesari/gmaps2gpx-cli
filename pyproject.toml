@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gmaps2gpx"
+version = "1.0.0"
+description = "Convert Google Maps direction URLs to GPX files. Supports shortened URLs, dragged routes, alternative routes, and motorcycle (two-wheeler) mode."
+authors = [{ name = "Prajwal P", email = "prajwalp@finarb.ai" }]
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = ["requests>=2.28"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: GIS",
+]
+keywords = ["gpx", "google-maps", "converter", "gps", "motorcycle", "two-wheeler", "directions"]
+
+[project.urls]
+Homepage = "https://gmaps2gpx.vercel.app"
+Repository = "https://github.com/prajwalgajakesari/gmaps2gpx-cli"
+Issues = "https://github.com/prajwalgajakesari/gmaps2gpx-cli/issues"
+
+[project.scripts]
+gmaps2gpx = "gmaps2gpx.cli:main"
