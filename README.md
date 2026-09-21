@@ -22,7 +22,7 @@ pipx install gmaps2gpx
 
 # From source
 git clone https://github.com/prajwalgajakesari/gmaps2gpx-cli.git
-cd gmaps2gpx
+cd gmaps2gpx-cli
 pip install .
 ```
 
